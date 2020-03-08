@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  .contents{
+    width:100%;
+    height: 100vh;
+  .contents__hader{
+    width:100%;
+    height:100px;
+    background-color:rgb(54, 50, 50);
+    font-size: 40px;
+    font-weight: 700;
+    color: lightgray;
+    font-style: oblique;
+    padding: 15px 0 0 100px;
+    }
+    .contents__box{
+      padding: 0 100px;
+      background-color: lightgreen;
+      width:100%;
+      height:100%;
+      display: flex;
+      .contents__box--one{
+        width:40% ;
+        background-color: lightpink;
+        .contents__box--one--text{
+
+          }
+        }
+      .contents__box--two{
+        width: 60%;
+        background-color: lightskyblue;
+        .contents__box--two--text{
+
+          }
+        }
+    }
+  }
+}
