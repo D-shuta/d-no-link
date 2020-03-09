@@ -16,38 +16,26 @@
     &__box{
       padding: 0 100px;
       width:100%;
-      height:100%;
+      height:160px;
       display: flex;
+      background-color: rgb(243, 241, 241);
       &--one{
-        width:20% ;
-        background-color: lightpink;
-        &--text{
-          span{
-            font-size: 12px;
-          }
-          font-size: 25px;
-
-          }
-        }
+        width:50% ;
+        height:100vh ;
+        font-size: 14px;
+      }
       &--two{
-        width: 45%;
-        background-color: rgb(107, 168, 206);
-        .contents__box--two--text{
+        width:50% ;
+        height:100vh;
+        font-size: 14px;
+      }
+        &--three{
+          width:100% ;
+          height:100vh;
+          padding: 0 0 0 100px;
+        }
 
-          }
+
         }
-      &--three{
-        width: 16%;
-        background-color: rgb(209, 189, 201);
-        margin-top: 10px;
-        }
-    .hon{
-      width:100% ;
-      transform: rotate( +90deg );
+      }
     }
-    .hon1{
-      transform: rotate( +180deg );
-    }
-    }
-  }
-}
