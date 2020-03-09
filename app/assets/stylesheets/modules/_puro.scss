@@ -3,7 +3,7 @@
   .contents{
     width:100%;
     height: 100vh;
-  .contents__hader{
+  &__hader{
     width:100%;
     height:100px;
     background-color:rgb(54, 50, 50);
@@ -13,15 +13,15 @@
     font-style: oblique;
     padding: 15px 0 0 100px;
     }
-    .contents__box{
+    &__box{
       padding: 0 100px;
       width:100%;
       height:100%;
       display: flex;
-      .contents__box--one{
+      &--one{
         width:20% ;
         background-color: lightpink;
-        .contents__box--one--text{
+        &--text{
           span{
             font-size: 12px;
           }
@@ -29,20 +29,24 @@
 
           }
         }
-      .contents__box--two{
+      &--two{
         width: 45%;
         background-color: rgb(107, 168, 206);
         .contents__box--two--text{
 
           }
         }
-      .contents__box--three{
+      &--three{
         width: 16%;
         background-color: rgb(209, 189, 201);
         margin-top: 10px;
         }
     .hon{
       width:100% ;
+      transform: rotate( +90deg );
+    }
+    .hon1{
+      transform: rotate( +180deg );
     }
     }
   }
