@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  .contents2{
+    width:100%;
+    height: 100vh;
+  &__hader{
+    width:100%;
+    height:100px;
+    background-color:rgb(54, 50, 50);
+    font-size: 40px;
+    font-weight: 700;
+    color: lightgray;
+    font-style: oblique;
+    padding: 15px 0 0 100px;
+    }
+    &__box{
+      padding: 0 100px;
+      width:100%;
+      height:160px;
+      display: flex;
+      background-color: rgb(243, 241, 241);
+      &--one{
+        width:50% ;
+        height:100vh ;
+        font-size: 14px;
+      }
+      &--two{
+        width:50% ;
+        height:100vh;
+        font-size: 14px;
+      }
+        &--three{
+          width:100% ;
+          height:100vh;
+          padding: 0 0 0 100px;
+        }
+
+
+        }
+        span {
+          display: inline-block;
+          position: relative;
+          padding: 0.35em 1em;
+          background: #668ad8;/*ボタン色*/
+          color: #FFF;
+          text-decoration: none;
+        }
+        
+        span:before {
+          content: "";
+          position: absolute;
+          top: -16px;
+          left: 0;
+          width: -webkit-calc(100% - 16px);
+          width: calc(100% - 16px);
+          height: 0;
+          border: solid 8px transparent;
+          border-bottom-color: #8eacec;/*ボタン色より明るめの色に*/
+        }
+        
+        span:active {
+          /*押したとき*/
+          padding: 0.32em 0.9em;
+          -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+        }
+        
+        span:active:before { 
+          width: -webkit-calc(100% - 12px);
+          width: calc(100% - 12px);
+        }
+        
+        span:active:before {
+          top:-12px;
+          border-width: 6px;
+        }
+      }
+    }
