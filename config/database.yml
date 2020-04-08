@@ -47,8 +47,14 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# production:
+#   <<: *default
+#   database: d-no-link_production
+#   username: d-no-link
+#   password: <%= ENV['D-NO-LINK_DATABASE_PASSWORD'] %>
 production:
+#半角スペース２個分の空白を開ける
   <<: *default
-  database: d-no-link_production
-  username: d-no-link
-  password: <%= ENV['D-NO-LINK_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
